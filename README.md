@@ -48,7 +48,11 @@ Terminal=false
 Type=Application
 Categories=Game;</code></pre>
     </div>
-    <h2>🎮 Como Jogar</h2>
+
+   <h2>Opcional</h2>
+      <pre><code>sudo udevadm control --reload-rules && sudo udevadm trigger</code></pre>
+
+   <h2>🎮 Como Jogar</h2>
     <ol>
         <li>Conecte o adaptador USB do controle.</li>
         <li>Abra o menu do sistema e procure por <b>"Ativar Controle 8BitDo"</b>.</li>
