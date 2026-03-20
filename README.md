@@ -58,5 +58,5 @@ Categories=Game;</code></pre>
     <hr>
     <p align="center"><i>Desenvolvido para garantir a melhor experiência no Xbox Cloud Gaming via Linux.</i></p>
 
-   <img width="420" height="420" alt="image" src="https://github.com/user-attachments/assets/1e75a612-e45b-40b7-9920-d04f19b1c8fc" />
+   <img positional=center width="420" height="420" alt="image" src="https://github.com/user-attachments/assets/1e75a612-e45b-40b7-9920-d04f19b1c8fc" />
 
