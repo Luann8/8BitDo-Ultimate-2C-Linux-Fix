@@ -5,8 +5,7 @@
         <strong>Solução definitiva para mapeamento de 16 botões (Modo Xbox) no Linux (Pop!_OS / Ubuntu)</strong>
     </p>
 
-    <hr>
-
+   <hr>
     <h2>📝 Sobre o Projeto</h2>
     <p>
         O <b>8BitDo Ultimate 2C Wireless</b> costuma ser identificado no Linux apenas no modo <i>D-Input</i> genérico, o que causa bugs críticos:
@@ -17,17 +16,13 @@
         <li>Apenas 11 botões detectados (o xCloud exige 16).</li>
     </ul>
     <p>Este projeto utiliza o <code>xboxdrv</code> para criar um "clone" virtual de um controle de Xbox 360, corrigindo todos os eixos via mapeamento <b>evdev</b>.</p>
-
     <h2>🚀 Pré-requisitos</h2>
     <p>Instale o driver necessário via terminal:</p>
     <pre><code>sudo apt update && sudo apt install xboxdrv -y</code></pre>
-
     <h2>🛠️ Passo a Passo</h2>
-
     <h3>1. Criar o Script de Correção</h3>
     <p>Use o <b>Vim</b> para criar o arquivo na sua pasta pessoal:</p>
-    <pre><code>vim ~/8bitdo_fix.sh</code></pre>
-    
+    <pre><code>vim ~/8bitdo_fix.sh</code></pre>  
     <p>Cole o código abaixo (calibrado para o modelo 2C):</p>
     <div style="background-color: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px;">
         <pre><code>#!/bin/bash
@@ -37,14 +32,11 @@ sudo xboxdrv --evdev /dev/input/by-id/usb-8BitDo_8BitDo_Ultimate_2C_Wireless_Con
 --axismap -y1=y1,-y2=y2 \
 --mimic-xpad --silent</code></pre>
     </div>
-
     <p>Dê permissão de execução:</p>
     <pre><code>chmod +x ~/8bitdo_fix.sh</code></pre>
-
     <h3>2. Criar Atalho no Menu (App)</h3>
     <p>Para abrir o controle com um clique no menu de aplicativos:</p>
     <pre><code>vim ~/.local/share/applications/8bitdo-xbox.desktop</code></pre>
-
     <p>Cole o conteúdo:</p>
     <div style="background-color: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px;">
         <pre><code>[Desktop Entry]
@@ -56,7 +48,6 @@ Terminal=false
 Type=Application
 Categories=Game;</code></pre>
     </div>
-
     <h2>🎮 Como Jogar</h2>
     <ol>
         <li>Conecte o adaptador USB do controle.</li>
@@ -64,6 +55,5 @@ Categories=Game;</code></pre>
         <li>Digite sua senha no terminal que abrir.</li>
         <li>O controle agora aparecerá como <b>Microsoft Xbox 360 Controller</b> no Gamepad Tester e no xCloud.</li>
     </ol>
-
     <hr>
     <p align="center"><i>Desenvolvido para garantir a melhor experiência no Xbox Cloud Gaming via Linux.</i></p>
