@@ -1,8 +1,7 @@
 
-
-    <h1 align="center">🎮 8BitDo Ultimate 2C - Linux Fix</h1>
+ <h1 align="center">🎮 8BitDo Ultimate 2C - Linux Fix</h1>
     
-    <p align="center">
+<p align="center">
         <strong>Solução definitiva para mapeamento de 16 botões (Modo Xbox) no Linux (Pop!_OS / Ubuntu)</strong>
     </p>
 
