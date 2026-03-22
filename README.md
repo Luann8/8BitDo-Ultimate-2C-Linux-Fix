@@ -26,11 +26,7 @@
     <p>Cole o código abaixo (calibrado para o modelo 2C):</p>
     <div style="background-color: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 8px;">
         <pre><code>#!/bin/bash
-sudo xboxdrv --evdev /dev/input/by-id/usb-8BitDo_8BitDo_Ultimate_2C_Wireless_Controller_D08018A781-event-joystick \
---evdev-absmap ABS_X=x1,ABS_Y=y1,ABS_RX=x2,ABS_RY=y2,ABS_Z=lt,ABS_RZ=rt,ABS_HAT0X=dpad_x,ABS_HAT0Y=dpad_y \
---evdev-keymap BTN_SOUTH=a,BTN_EAST=b,BTN_NORTH=x,BTN_WEST=y,BTN_TL=lb,BTN_TR=rb,BTN_THUMBL=tl,BTN_THUMBR=tr,BTN_SELECT=back,BTN_START=start,BTN_MODE=guide \
---axismap -y1=y1,-y2=y2 \
---mimic-xpad --silent</code></pre>
+sudo xboxdrv --evdev /dev/input/event21 --evdev-absmap ABS_X=x1,ABS_Y=y1,ABS_RX=x2,ABS_RY=y2,ABS_Z=lt,ABS_RZ=rt,ABS_HAT0X=dpad_x,ABS_HAT0Y=dpad_y --evdev-keymap BTN_SOUTH=a,BTN_EAST=b,BTN_NORTH=x,BTN_WEST=y,BTN_TL=lb,BTN_TR=rb,BTN_THUMBL=tl,BTN_THUMBR=tr,BTN_SELECT=back,BTN_START=start,BTN_MODE=guide --axismap -y1=y1,-y2=y2 --mimic-xpad --silent</code></pre>
     </div>
     <p>Dê permissão de execução:</p>
     <pre><code>chmod +x ~/8bitdo_fix.sh</code></pre>
