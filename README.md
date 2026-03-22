@@ -47,7 +47,10 @@ Categories=Game;</code></pre>
 
    <h2>Opcional</h2>
       <pre><code>sudo udevadm control --reload-rules && sudo udevadm trigger</code></pre>
-
+      <pre><code>
+sudo modprobe -r xpad
+sudo modprobe xpad
+       <pre><code>
    <h2>🎮 Como Jogar</h2>
     <ol>
         <li>Conecte o adaptador USB do controle.</li>
