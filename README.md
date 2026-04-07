@@ -155,3 +155,5 @@ Sinta-se livre para contribuir com melhorias.
 <p align="center">
   <i>Feito para melhorar a experiência com Xbox Cloud Gaming no Linux 🎮</i>
 </p>
+
+<img width="1500" height="1500" alt="image" src="https://github.com/user-attachments/assets/efb18f7c-f441-4a03-a3ca-11cec16064e5" />
